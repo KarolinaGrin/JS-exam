@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weight Converter</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Custom JS -->
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Header code-->
+    </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Weight Converter</title>
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Custom JS -->
-  <script defer src="./script.js"></script>
-</head>
+    <main>
+      <div class="wrapper">
+        <h1 class="headline">Weight Converter</h1>
+        <!-- Users input -->
+        <form>
+          <input type="text" id="search" placeholder="Enter kilograms..." />
+          <input type="submit" id="submit-btn" value="Calculate" 
+            oninput="kiloweightConvert(this.value)"
+            onchange="kiloweightConvert(this.value)">
+        </form>
 
-<body>
-  <header>
-    <!-- Header code-->
-  </header>
+        <p>Svarai: <span id="Pounds"></span></p>
+ 
+ 
+        <p>Uncijos: <span id="Ounces"></span></p>
+ 
+ 
+        <p>Gramai: <span id="Grams"></span></p>
+      </div>
 
-  <main>
-    <div class="wrapper">
-      <h1 class="headline">Weight Converter</h1>
-      <!-- Users input -->
-      <form>
-        <input type="text" id="search" placeholder="Enter kilograms..." />
-        <input type="submit" id="submit-btn" value="Calculate" />
-      </form>
-      <!-- Place for output after form submission -->
-      <div id="output"></div>
-      <p>
-        <label>Kilogramai</label>
-        <input id="inputKilogramai" type="number" placeholder="Kilogramai" oninput="weightConverter(this.value)"
-          onchange="weightConverter(this.value)">
-      </p>
-      <p>Gramai<span id="outputGrams"></span></p>
-    </div>
-  </main>
+                <!-- Place for output after form submission -->
+        <div id="output"></div>
+        <!--<table id="Svarai">
+          <label>Svarai</label>
+          <input id="inputSvarai" type="number" placeholder=""
+          oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+        </table>
+        <table id="Gramai">
+          <label>Gramai</label>
+          <input id="inputGramai" type="number" placeholder=""
+          oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+        </table>
+        <table id="Uncijos">
+          <label>Uncijos</label>
+          <input id="inputUncijos" type="number" placeholder=""
+          oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+        </table>-->
+      </div>
+    </main>
 
-  <footer>
-    <!-- Footer code -->
-  </footer>
-</body>
-
+    <footer>
+      <!-- Footer code -->
+    </footer>
+  </body>
 </html>

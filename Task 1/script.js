@@ -9,6 +9,27 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
 
+function kiloweightConvert(valNum) {
+    document.getElementById("Svarai").innerHTML = valNum * 2.2046;
+    document.getElementById("Uncijos").innerHTML = valNum * 35.274;
+    document.getElementById("Gramai").innerHTML = valNum * 1000;
+}
+
+
+
+
+
+
+/* function weightConverter(valNum) {
+    // document.getElementById("outputGramai").innerHTML = valNum / 0.0010000;
+}
 function weightConverter(valNum) {
-    document.getElementById("outputGramai").innerHTML = valNum / 0.0010000;
-  }
+    document.getElementById("outputUncijos").innerHTML = valNum * 35.274;
+}
+function weightConverter(valNum) {
+    document.getElementById("outputSvarai").innerHTML = valNum * 2.2046;
+}
+
+function outputGramai() {
+    document.getElementById('convert').innerHTML =
+        (document.getElementById('kilogramai').value / 0.0010000 + "g");
