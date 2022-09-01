@@ -13,6 +13,5 @@ const audi = {
 
 console.log(Object.keys(audi));
 
-//grąžino visus key
-
+//grąžina visus key kaip masyvą
 
