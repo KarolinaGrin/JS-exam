@@ -9,6 +9,10 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
 
-function weightConverter(valNum) {
-    document.getElementById("outputGramai").innerHTML = valNum / 0.0010000;
-  }
+function kiloweightConvert(value) {
+    document.getElementById("Svarai").innerHTML = value * 2.2046;
+    document.getElementById("Uncijos").innerHTML = value * 35.274;
+    document.getElementById("Gramai").innerHTML = value * 100;
+}
+
+//neveikia .onsubmit, palikau.., kad bent konvertuotų, paspaudus rašo NaN

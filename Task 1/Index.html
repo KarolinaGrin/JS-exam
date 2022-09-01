@@ -20,17 +20,26 @@
       <h1 class="headline">Weight Converter</h1>
       <!-- Users input -->
       <form>
-        <input type="text" id="search" placeholder="Enter kilograms..." />
-        <input type="submit" id="submit-btn" value="Calculate" />
+
+        <input type="number" id="search" placeholder="Enter kilograms..." oninput="kiloweightConvert(this.value)"
+          onclick="kiloweightConvert(this.value)">
+        <input type="submit" id="submit-btn" value="Calculate" oninput="kiloweightConvert(this.value)"
+          onclick="kiloweightConvert(this.value)">
+
       </form>
-      <!-- Place for output after form submission -->
-      <div id="output"></div>
-      <p>
-        <label>Kilogramai</label>
-        <input id="inputKilogramai" type="number" placeholder="Kilogramai" oninput="weightConverter(this.value)"
-          onchange="weightConverter(this.value)">
-      </p>
-      <p>Gramai<span id="outputGrams"></span></p>
+
+      <p>Svarai: <span id="Svarai"></span></p>
+
+      <p>Uncijos: <span id="Uncijos"></span></p>
+
+      <p>Gramai: <span id="Gramai"></span></p>
+
+    </div>
+
+    <!-- Place for output after form submission -->
+    <div id="output"></div>
+    </form>
+
     </div>
   </main>
 

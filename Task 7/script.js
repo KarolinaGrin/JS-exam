@@ -10,3 +10,9 @@ const audi = {
   year: 2005,
   color: 'white',
 };
+
+showObjectKeys = Object.keys(audi);
+console.log(showObjectKeys);
+
+
+//grąžina visus key kaip masyvą
