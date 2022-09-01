@@ -7,9 +7,18 @@ division(a, b) - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
 
-function Calculator(a, b) {
-    this.a = a;
-    this.b = b;
-    var total = 0;
-}
-    this.sum = function() 
+const sum = new Function('a', 'b', 'return a + b');
+
+console.log(sum(5, 10));
+
+const susubtraction = new Function('a', 'b', 'return a - b');
+
+console.log(susubtraction(5, 10));
+
+const multiplication = new Function('a', 'b', 'return a * b');
+
+console.log(multiplication(5, 10));
+
+const division = new Function('a', 'b', 'return a / b');
+
+console.log(division(5, 10));
