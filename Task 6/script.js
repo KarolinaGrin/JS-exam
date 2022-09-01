@@ -20,7 +20,7 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
-const getAverage = arr => {
+const getUserAverageAge = arr => {
   const reducer = (total, currentValue) => total + currentValue;
   const sum = arr.reduce(reducer)
   return sum / arr.length;
@@ -28,4 +28,9 @@ const getAverage = arr => {
 
 const ages = users.map(users => users.age);
 
-console.log(getAverage(ages));
+console.log(getUserAverageAge(ages));
+
+const getUsersNames = users.map(({ name }) => name);
+
+console.log(getUsersNames)
+
