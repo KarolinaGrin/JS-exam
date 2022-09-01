@@ -7,6 +7,7 @@ division(a, b) - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
 
-const adder = new Function('a', 'b', 'return a + b')
-
-adder (2, 6);
+const Calculator = {
+    a: '10',
+    b: '15',
+};

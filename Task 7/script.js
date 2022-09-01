@@ -11,7 +11,8 @@ const audi = {
   color: 'white',
 };
 
-console.log(Object.keys(audi));
+showObjectKeys = Object.keys(audi);
+console.log(showObjectKeys);
+
 
 //grąžina visus key kaip masyvą
-
