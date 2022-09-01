@@ -10,3 +10,9 @@ const audi = {
   year: 2005,
   color: 'white',
 };
+
+console.log(Object.keys(audi));
+
+//grąžino visus key
+
+
