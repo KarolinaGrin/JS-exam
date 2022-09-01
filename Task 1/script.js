@@ -15,3 +15,4 @@ function kiloweightConvert(value) {
     document.getElementById("Gramai").innerHTML = value * 100;
 }
 
+//neveikia .onsubmit, palikau .innerHTML
